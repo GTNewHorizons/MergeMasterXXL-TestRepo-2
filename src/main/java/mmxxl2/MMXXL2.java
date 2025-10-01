@@ -1,4 +1,4 @@
-package com.myname.mymodid;
+package mmxxl2;
 
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
@@ -9,14 +9,15 @@ import cpw.mods.fml.common.event.FMLInitializationEvent;
 import cpw.mods.fml.common.event.FMLPostInitializationEvent;
 import cpw.mods.fml.common.event.FMLPreInitializationEvent;
 import cpw.mods.fml.common.event.FMLServerStartingEvent;
+import mmxxl1.MMXXL1;
 
-@Mod(modid = MyMod.MODID, version = Tags.VERSION, name = "MyMod", acceptedMinecraftVersions = "[1.7.10]")
-public class MyMod {
+@Mod(modid = MMXXL2.MODID, version = Tags.VERSION, name = "MMXXL 2", acceptedMinecraftVersions = "[1.7.10]")
+public class MMXXL2 {
 
-    public static final String MODID = "mymodid";
+    public static final String MODID = "mmxxl2";
     public static final Logger LOG = LogManager.getLogger(MODID);
 
-    @SidedProxy(clientSide = "com.myname.mymodid.ClientProxy", serverSide = "com.myname.mymodid.CommonProxy")
+    @SidedProxy(clientSide = "mmxxl2.ClientProxy", serverSide = "mmxxl2.CommonProxy")
     public static CommonProxy proxy;
 
     @Mod.EventHandler
@@ -42,5 +43,6 @@ public class MyMod {
     // register server commands in this event handler (Remove if not needed)
     public void serverStarting(FMLServerStartingEvent event) {
         proxy.serverStarting(event);
+        MMXXL1.doThing(1);
     }
 }

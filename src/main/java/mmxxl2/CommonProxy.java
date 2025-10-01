@@ -1,4 +1,4 @@
-package com.myname.mymodid;
+package mmxxl2;
 
 import cpw.mods.fml.common.event.FMLInitializationEvent;
 import cpw.mods.fml.common.event.FMLPostInitializationEvent;
@@ -12,8 +12,8 @@ public class CommonProxy {
     public void preInit(FMLPreInitializationEvent event) {
         Config.synchronizeConfiguration(event.getSuggestedConfigurationFile());
 
-        MyMod.LOG.info(Config.greeting);
-        MyMod.LOG.info("I am MyMod at version " + Tags.VERSION);
+        MMXXL2.LOG.info(Config.greeting);
+        MMXXL2.LOG.info("I am MMXXL 2 at version " + Tags.VERSION);
     }
 
     // load "Do your mod setup. Build whatever data structures you care about. Register recipes." (Remove if not needed)
