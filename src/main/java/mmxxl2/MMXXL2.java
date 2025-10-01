@@ -43,6 +43,6 @@ public class MMXXL2 {
     // register server commands in this event handler (Remove if not needed)
     public void serverStarting(FMLServerStartingEvent event) {
         proxy.serverStarting(event);
-        MMXXL1.doThing();
+        MMXXL1.doThing(1);
     }
 }
