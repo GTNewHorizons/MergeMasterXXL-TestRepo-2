@@ -1,4 +1,4 @@
-package com.myname.mymodid;
+package mmxxl2;
 
 import java.io.File;
 
