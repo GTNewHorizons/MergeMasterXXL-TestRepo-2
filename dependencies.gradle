@@ -34,7 +34,7 @@
  * For more details, see https://docs.gradle.org/8.0.1/userguide/java_library_plugin.html#sec:java_library_configurations_graph
  */
 dependencies {
-    runtimeOnlyNonPublishable("com.github.GTNewHorizons:NotEnoughItems:2.7.91-GTNH:dev")
+    runtimeOnlyNonPublishable("com.github.GTNewHorizons:NotEnoughItems:2.8.1-GTNH-pre:dev")
 
-    implementation("com.github.GTNewHorizons:MergeMasterXXL-TestRepo:99.99.99:dev")
+    implementation("com.github.GTNewHorizons:MergeMasterXXL-TestRepo:v0.0.9-pre:dev")
 }
